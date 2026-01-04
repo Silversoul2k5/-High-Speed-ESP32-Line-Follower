@@ -19,60 +19,59 @@ True 90° turns (on-spot pivot)
 
 High-speed straights
 ___________________________________________________
-🚀 Key Features
-⚡ High-Speed Performance
-___________________________________________________
-Runs near maximum PWM (255) on straight sections
 
-Dynamic braking for curves and turns
+## 🚀 Key Features
 
-Optimized for compact competition tracks
+### ⚡ High-Speed Performance
 
-🔁 Intelligent Turn Handling
+* Runs near **maximum PWM (255)** on straight sections
+* Dynamic braking for curves and turns
+* Optimized for **compact competition tracks**
 
-Acute angles (30°–60°) handled smoothly using PID
+### 🔁 Intelligent Turn Handling
 
-True 90° turns executed using on-spot pivot
-(one wheel forward, the other reverse)
+* **Acute angles (30°–60°)** handled smoothly using PID
+* **True 90° turns** executed using **on-spot pivot**
+  (one wheel forward, the other reverse)
+* Prevents false pivots on sharp curves
 
-Prevents false pivots on sharp curves
+### 🎯 Advanced Control Logic
 
-🎯 Advanced Control Logic
+* **PD controller (Kp + Kd)** tuned for high speed
+* No Ki → avoids integral windup
+* Two-stage turn classification:
 
-PD controller (Kp + Kd) tuned for high speed
+  * Curve vs Pivot
 
-No Ki → avoids integral windup
+### 👀 RoboEyes OLED Display
 
-Two-stage turn classification:
+* Animated robotic eyes using **FluxGarage RoboEyes**
+* Runs independently of motor control (non-blocking)
+* Adds personality without affecting performance
 
-Curve vs Pivot
+### 🧠 No Calibration Required
 
-👀 RoboEyes OLED Display
+* Fixed threshold logic
+* Reliable across varying lighting conditions
+* Faster startup and simpler deployment
 
-Animated robotic eyes using FluxGarage RoboEyes
+---
 
-Runs independently of motor control (non-blocking)
+## 🛠️ Hardware Used
 
-Adds personality without affecting performance
+| Component    | Description                           |
+| ------------ | ------------------------------------- |
+| MCU          | ESP32                                 |
+| Sensors      | 8-channel IR reflectance sensor array |
+| Motor Driver | TB6612FNG                             |
+| Motors       | 6V DC geared motors (N20 class)       |
+| Display      | 0.96" OLED SSD1306                    |
+| Power        | Li-ion / LiPo (regulated)             |
+| Chassis      | Custom compact line follower chassis  |
 
-🧠 No Calibration Required
+---
 
-Fixed threshold logic
 
-Reliable across varying lighting conditions
-
-Faster startup and simpler deployment
-______________________________________________________
-🛠️ Hardware Used
-______________________________________________________
-Component	Description
-MCU	ESP32
-Sensors	8-channel IR reflectance sensor array
-Motor Driver	TB6612FNG
-Motors	6V DC geared motors (N20 class)
-Display	0.96" OLED SSD1306
-Power	Li-ion / LiPo (regulated)
-Chassis	Custom compact line follower chassis
 ________________________________________________________
 # 🔌 Full Hardware Connections
 ________________________________________________________
