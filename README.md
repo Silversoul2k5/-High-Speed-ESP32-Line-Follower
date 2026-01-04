@@ -177,7 +177,7 @@ ________________________________________________________
 If this project helped you or inspired your build, you can support my work:
 
 - ❤️ GitHub Sponsors
-- ☕ Buy Me a Coffee: [https://www.buymeacoffee.com/yourname](https://buymeacoffee.com/silversoul2k5)
+- ☕ Buy Me a Coffee: [CLICK_HERE](https://buymeacoffee.com/silversoul2k5)
 
 Thank you for supporting open-source robotics!
 
